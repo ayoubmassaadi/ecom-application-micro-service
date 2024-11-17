@@ -5,8 +5,8 @@ spring:
         - id: r1
           uri: lb://CUSTOMER-SERVICE
           predicates:
-            - Path= /api/customers/**
+            Path= /api/customers/**
         - id: r2
           uri: lb://INVENTORY-SERVICE
           predicates:
-            - Path= /api/products/**
+            Path= /api/products/**
